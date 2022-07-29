@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nominal Roll</title>
+</head>
+<body>
+    <h1>Contact Information</h1>
+    <table>
+        <tr>
+            <td>Full Name</td>
+            <td>Gender</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Grade</td>
+            <td>Type</td>
+            <td>Competition Experience</td>
+        </tr>
+        <tr th:each="student: ${students}">
+            <td th:text="${student.fullName}"></td>
+            <td th:text="${student.gender}"></td>
+            <td th:text="${student.email}"></td>
+            <td th:text="${student.phone}"></td>
+            <td th:text="${student.grade}"></td>
+            <td th:text="${student.type}"></td>
+            <td th:text="${student.competeBefore}"></td>
+        </tr>
+    </table>
+</body>
+</html>
