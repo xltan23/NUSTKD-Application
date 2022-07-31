@@ -19,7 +19,7 @@ import sg.edu.nus.iss.TaekwondoData.services.StudentService;
 @Controller
 @RequestMapping(path = "/nustkd-submit")
 public class StudentController {
-    private List<Student> studentList = new ArrayList<>();
+    //private List<Student> studentList = new ArrayList<>();
 
     @Autowired
     private StudentService stuSvc;
@@ -52,11 +52,11 @@ public class StudentController {
         return "studentProfile";
     }
 
-    @GetMapping(value="/studentList")
-    public String studentList(Model model) {
-        studentList = stuSvc.getStudentList();
-        model.addAttribute("students", studentList);
-        return "studentList";
-    }
+    // @GetMapping(value="/studentList")
+    // public String studentList(Model model) {
+    //     studentList = stuSvc.getStudentList();
+    //     model.addAttribute("students", studentList);
+    //     return "studentList";
+    // }
 
 }

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUS Taekwondo</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<marquee behavior="" direction="" style="background-color: orange; color:steelblue;">Welcome to NUS Taekwondo</marquee>
+<body background="./images/NUS-Team.jpg" style="background-size: cover; background-blend-mode: overlay; background-color: rgba(255, 255, 255, 0.486)" link="white" alink="blue" vlink="black">
+    
+    <div class="container" style="background-color: transparent;">
+        <img src="./images/NUS-Logo.png" alt="" width="10%" height="10%">
+        <h1>NUS TAEKWONDO</h1>
+        
+    </div>
+    <div class="centralise">
+        <h3><span data-th-text="${currentTime}"></span></h3>
+        <h3 data-th-if="${currentHour le 12}">Good Morning!</h3>
+        <h3 data-th-unless="${currentHour le 12}">Good Afternoon!</h3>
+    </div>
+    
+
+    <br><br><br>
+    <div class="container">
+        
+        <a th:href="@{/people.html}">
+            <div class="image">
+                <img class="round" src="./images/Taekwondo-People1.jpg" alt="Taekwondo People" width="200px" height="200px">
+                <div class="image-overlay">
+                    <div class="image-title">Our People</div>
+                    <p class="image-description">Coaches and EXCO</p>
+                </div>
+            </div>
+        </a>
+        <a th:href="@{/about.html}">
+            <div class="image">
+                <img class="round" src="./images/Taekwondo-People.jpg" alt="About" width="200px" height="200px">
+                <div class="image-overlay">
+                    <div class="image-title">About Taekwondo</div>
+                    <p class="image-description">Poomsae & Kyorugi</p>
+                </div>
+            </div>
+        </a>
+        <a th:href="@{/studentForm.html}">
+            <div class="image">
+                <img class="round" src="./images/Registration-Form.jpg" alt="Registration" width="200px" height="200px">
+                <div class="image-overlay">
+                    <div class="image-title">Registration Form</div>
+                    <p class="image-description">Sign up now!</p>
+                </div>
+            </div>
+        </a>
+        <a th:href="@{/student-list}">
+            <div class="image">
+                <img class="round" src="./images/Students.jpg" alt="Students" width="200px" height="200px">
+                <div class="image-overlay">
+                    <div class="image-title">Registered Students</div>
+                    <p class="image-description">2022-2023</p>
+                </div>
+            </div>
+        </a>
+        <a th:href="@{/gallery.html}">
+            <div class="image">
+                <img class="round" src="./images/Gallery.jpg" alt="Gallery" width="200px" height="200px">
+                <div class="image-overlay">
+                    <div class="image-title">Gallery</div>
+                    <p class="image-description">Competition, Events, Camps</p>
+                </div>
+            </div>
+        </a>
+        
+        
+    </div>
+
+</body>
+</html>

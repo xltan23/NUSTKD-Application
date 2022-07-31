@@ -4,9 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nominal Roll</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
-<body>
-    <h1>Contact Information</h1>
+<marquee behavior="" direction="" style="background-color: orange; color:steelblue">National University of Singapore Taekwondo Applicants</marquee>
+<body background="./images/NUS-Background.jpg" link="red" alink="blue" vlink="black">
+    
+    <div class="container">
+        <img src="./images/NUS-Logo.png" alt="" width="10%" height="10%">
+        <h1>Registered Students</h1>
+    </div>
+    <a th:href="@{/nustaekwondo}">Home</a>
+    <a th:href="@{/studentForm.html}">Application Form</a>
+
     <table>
         <tr>
             <td>Full Name</td>
